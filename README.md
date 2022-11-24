@@ -18,6 +18,6 @@ $ keytool -genkeypair -alias keyStore -keyalg RSA \
 ```
 
 ```
-$ curl localhost:7000/decrypt -s -d {密文}
-$ curl localhost:7000/encrypt -s -d {明文}
+$ curl -X POST localhost:7000/decrypt -s -d {密文}
+$ curl -X POST localhost:7000/encrypt -s -d {明文}
 ```
