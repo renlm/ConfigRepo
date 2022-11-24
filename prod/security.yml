@@ -1,0 +1,5 @@
+spring:
+   security:
+      user:
+         name: '{cipher}FKSAJDFGYOS8F7GLHAKERGFHLSAJ'
+         password: '{cipher}FKSAJDFGYOS8F7GLHAKERGFHLSAJ'
