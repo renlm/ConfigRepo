@@ -14,6 +14,16 @@ https://spring.io/projects/spring-cloud
 https://repo.spring.io/ui/native/release/org/springframework/boot/spring-boot-cli
 ```
 
+```
+tar xvfz spring-boot-cli-2.6.13-bin.tar.gz
+cd spring-2.6.13
+export PATH=$PATH:$PWD/bin
+```
+
+```
+spring install org.springframework.cloud:spring-cloud-cli:2.2.4.RELEASE
+```
+
 #### 加密解密
 
 ```
