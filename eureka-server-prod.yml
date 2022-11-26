@@ -8,7 +8,7 @@ spring:
 eureka:
   instance:
     preferIpAddress: false
-    hostname: ${INSTANCE_HOSTNAME}
+    hostname: ${EUREKA_INSTANCE_HOSTNAME}
     nonSecurePort: ${server.port}
     instanceId: ${eureka.instance.hostname}:${eureka.instance.nonSecurePort}
   client:
