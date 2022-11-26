@@ -1,0 +1,9 @@
+eureka:
+  instance:
+    hostname: ${spring.application.name}
+    nonSecurePort: ${server.port}
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://springCloud:123654@localhost:7001/eureka

@@ -1,0 +1,9 @@
+eureka:
+  instance:
+    hostname: ${spring.application.name}
+    nonSecurePort: ${server.port}
+  client:
+    registerWithEureka: ${REGISTER_WITH_EUREKA:true}
+    fetchRegistry: ${FETCH_REGISTRY:true}
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER}
