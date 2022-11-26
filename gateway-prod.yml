@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: area_selector
+        uri: https://datav.aliyun.com/portal/school/atlas/area_selector
+        predicates:
+        - Path=/area_selector/**
