@@ -5,6 +5,13 @@ spring:
     user:
       name: springCloud
       password: 123654
+  redis:
+    host: "{cipher}AQAz9N3dWicthltWvzOrEgRE66nyoWAwaB5Qukm7OHcMrYF5fyn5C8eb0V+Io+Boc5n7fOI7ltzqyUryfJkT+rXqcbOPibcFkZ01Yg51yLhRaG3IIA6EXOkzl4RdlH9JDlT3QAY721B/uK/ZV8fEO7l8MbO3N2mg0g0is+YIp2elVUQlEfqSJAqS0U0MMy8stHHrRVvwcMYFA5wlw85vr3GtjlwYtgbmIpbaRq8v++CFtXO64uI7ORyb238teWCKFdw1quyYksEtL2EYR3D0g4FbckjgdQLq4ud3xwaAgswmbF3/jynZthc/7b3cZ70ePQI+heROSTnaCRJAA0aspnQKF0FVXvnb9SBRUdLNNtytdhIcnr0Sl0lkCXKu4EAjyZE="
+    port: 30379
+    timeout: 6000
+    password: "{cipher}AQAtBScDOC3TeGNWTWpmV/jdNvq7ClZczudMENXKAanYfkChJAFnmbVRHli8M5nV6F8IWBE9NkaJ5Z8mpul/SiO2HfZgk3Vp5/eDKcCqL4H19xQoqlDMA47c8qYq3JZK/nyoWVJ1iJsCDJHlfMvkQK7QdpDZBPXCXVu1NJHzXEo3SHEd5Tu2PsLu0GxDQHug0IW1YVqit148xjJPbM/+zBPBOgMbL0cfzCfKT1yaoeD2bM1tpugrSpY3GwtxPaI1bQetMWumaSqhmkjpW5YcZ2uQ48r9ME+DDOLDEkuwCaQkgpROTHfPxKNuRcuR0lUT0dwVSMZgHVzu+Yuo6w4meNm9QAOmu8IGsYDokgjr6/0OKNxZAyWgy/hKjQUuhJeKLbhtnI8fbvcHFbfnU6haPaHYTjOiV8gotoYgj6bWxMRKmw=="
+    database: 6
+    clientName: eureka-server-prod
 eureka:
   instance:
     preferIpAddress: false
