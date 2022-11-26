@@ -7,4 +7,6 @@ spring:
       - id: npmmirror
         uri: https://registry.npmmirror.com
         predicates:
-        - Path=/
+        - Path=/npmmirror/**
+        filters:
+        - StripPrefix=1
