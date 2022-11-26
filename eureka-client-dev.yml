@@ -1,7 +1,9 @@
 eureka:
   instance:
+    preferIpAddress: false
     hostname: ${spring.application.name}
     nonSecurePort: ${server.port}
+    instanceId: ${eureka.instance.hostname}:${eureka.instance.nonSecurePort}
   client:
     registerWithEureka: true
     fetchRegistry: true
