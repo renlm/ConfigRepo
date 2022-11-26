@@ -1,15 +1,18 @@
+server:
+  port: 7001
 spring:
   security:
     user:
-      name: ${SECURITY_NAME:springCloud}
-      password: ${SECURITY_PASSWORD:123654}
+      name: ${SECURITY_NAME}
+      password: ${SECURITY_PASSWORD}
 eureka:
   instance:
     preferIpAddress: false
-    instanceId: ${EUREKA_INSTANCE_HOSTNAME:${spring.cloud.client.ip-address}}:${server.port}
-    hostname: ${EUREKA_INSTANCE_HOSTNAME:${spring.cloud.client.ip-address}}
+    hostname: ${EUREKA_INSTANCE_HOSTNAME}
+    nonSecurePort: ${server.port}
+    instanceId: ${EUREKA_INSTANCE_HOSTNAME}:${server.port}
   client:
     registerWithEureka: ${REGISTER_WITH_EUREKA:true}
     fetchRegistry: ${FETCH_REGISTRY:false}
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER:http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/}
+      defaultZone: ${EUREKA_SERVER}
