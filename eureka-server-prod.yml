@@ -8,9 +8,9 @@ spring:
 eureka:
   instance:
     preferIpAddress: false
-    hostname: ${EUREKA_INSTANCE_HOSTNAME}
+    hostname: ${INSTANCE_HOSTNAME}
     nonSecurePort: ${server.port}
-    instanceId: ${EUREKA_INSTANCE_HOSTNAME}:${server.port}
+    instanceId: ${eureka.instance.hostname}:${eureka.instance.nonSecurePort}
   client:
     registerWithEureka: ${REGISTER_WITH_EUREKA:true}
     fetchRegistry: ${FETCH_REGISTRY:false}
