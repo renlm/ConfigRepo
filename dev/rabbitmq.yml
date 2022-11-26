@@ -1,7 +1,0 @@
-spring:
-   rabbitmq:
-      virtual-host: /renlm
-      host: rabbitmq.renlm.cn
-      port: 30672
-      username: '{cipher}AQBGdqQj3G3KyHIZpuMTZPQgqo7Hi1rTqumwYkyU7uxDX3FjDKecMUOqfUaNiWhoGhYdss7aH9Bge33MBBNFQVzfZFZNjF7k5jKPBfGl6pMXWiLaK49Jyxn5tVaSdjKpBUz9nGoBaLRHLeg5cShqsAeR3wIhhlu+a9NlYnAyk6epzABCZOJcVfvoSb4/PEfJ9rdlj3EcJcFRGVFKw3+zkLIwlojgqRmdELVi34r4YjtemNtog+BeiqVAiVwjkgG2GyJeu2CeniGXkhy/x23wFuXuYRjj5s6lz3D78Ibr6f9/Ekx216uD4K4IEO+ImuM7+R63IUo2Zse3yVDrneA3rFwNqCFoaVtBf7ii3dVS7nEES3MzwCIDuDQkDT0QG061DVA='
-      password: '{cipher}AQAzvUQVoWhhyEr4/Orz6Qsx2wscQDi9qN8CypbO/3LR/BiP+Y4doGYwwv1s7HRSvRP3bIrqjQaT7GTgSIhry6EBiEtwsXyHvnIGoNvjHfXzbnYyT6u8010VKcTN7myjVE+66VjNr1bVXqC2FzbDEan3Af+RRZEdCo/fHh4CfCxsb6WmR/VeUQOOUAMGHN+0Atud6ezsQS0CZOMx1tFYh5f4dfF/9M46df23Ldpth+EZ1WC6LZFToXmlbix7lqMheDnBkatXNZsOY24HbpxMTFG2sYj/itWSlfHRC1+c3oQwK5yz13IDUSO4EOqjzOI1fflSr/6Z2DPNnQrlfNeka7p6WYHXpkLh87EguN+NPZDXBi9E8S1vkdhPxmkN0eLj6iXly3MI4JMa4k05MrfHIF/n5zkLwg+abttGunBDaaMliA=='
