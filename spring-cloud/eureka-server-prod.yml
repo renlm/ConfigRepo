@@ -13,6 +13,8 @@ spring:
     database: 7
     clientName: "{cipher}AQCXpCAi/ISGpDxFfPmsMQvJxNAD0cYhTBHWy744jmb4gSptdi6YjDOr71e05SUyonb05zFU3uPTjF2n8gQMOR1CLHIkANQ5QLAWWNLjohMvSANFnh/M3rHcNyJkK4T1H1rgd+daP9s3av0N7Z7YfATPwMr1OGaOrIL4Ds0/ulo7VzNeU9XOGh2bV0WGGPyfFOIu/II9eBjBv61vql46jwr5N115mxZMvId1n7rvpeWdYWbNiRRJ7ypKVSrEPmJIqjNPFrcuz8xMoxuGk8qcqkyReKjOgzkQyh785pSgRN/UDSN7j5cwDtLwXoOsqlMnXSqOYt/cPSflJfyz8g/7Mxrjo+baD3ELgIpgoTgV/hpeZHH5RbLo9xaggE6lomEDcVue1+yX2SojO5cEO2FdqMcM"
 eureka:
+  datacenter: cloud
+  environment: product
   instance:
     preferIpAddress: false
     hostname: ${EUREKA_INSTANCE_HOSTNAME}
