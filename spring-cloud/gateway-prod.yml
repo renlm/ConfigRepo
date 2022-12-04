@@ -16,7 +16,7 @@ spring:
         registration:
           gateway:
             provider: gateway
-            clientId: client
+            clientId: gateway
             clientSecret: secret
             authorizationGrantType: authorization_code
             redirectUri: '{baseUrl}/login/oauth2/code/{registrationId}'
