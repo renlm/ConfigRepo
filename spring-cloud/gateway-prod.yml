@@ -10,6 +10,26 @@ spring:
   session:
     redis:
       namespace: gateway:session
+  security:
+    oauth2:
+      client:
+        registration:
+          gateway:
+            provider: gateway
+            clientId: client
+            clientSecret: secret
+            authorizationGrantType: authorization_code
+            redirectUri: '{baseUrl}/login/oauth2/code/{registrationId}'
+            scope:
+            - openid
+            - profile
+        provider:
+          gateway:
+            authorizationUri: https://auth-server.renlm.cn/oauth2/authorize
+            tokenUri: https://auth-server.renlm.cn/oauth2/token
+            jwkSetUri: https://auth-server.renlm.cn/oauth2/jwks
+            userInfoUri: https://auth-server.renlm.cn/userinfo
+            userNameAttribute: sub
   cloud:
     gateway:
       routes:
