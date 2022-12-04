@@ -1,5 +1,9 @@
 server:
   port: 7001
+  servlet:
+    session:
+      cookie:
+        name: EUREKA-SERVER
 spring:
   security:
     user:
@@ -7,6 +11,9 @@ spring:
       password: 123654
   redis:
     clientName: eureka-server-dev
+  session:
+    redis:
+      namespace: eurekaserver:session
 eureka:
   datacenter: default
   environment: dev

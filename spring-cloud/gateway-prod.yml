@@ -1,6 +1,15 @@
 server:
   port: 7002
+  reactive:
+    session:
+      cookie:
+        name: GATEWAY
 spring:
+  redis:
+    clientName: gateway-prod
+  session:
+    redis:
+      namespace: gateway:session
   cloud:
     gateway:
       routes:
