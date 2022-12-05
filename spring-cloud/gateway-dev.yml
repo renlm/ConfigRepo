@@ -17,7 +17,7 @@ spring:
           local:
             provider: local
             clientId: local
-            clientSecret: secret
+            clientSecret: secret1
             authorizationGrantType: authorization_code
             redirectUri: '{baseUrl}/login/oauth2/code/{registrationId}'
             scope:
