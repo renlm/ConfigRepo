@@ -14,9 +14,9 @@ spring:
     oauth2:
       client:
         registration:
-          gateway:
-            provider: gateway
-            clientId: gateway
+          local:
+            provider: local
+            clientId: local
             clientSecret: secret
             authorizationGrantType: authorization_code
             redirectUri: '{baseUrl}/login/oauth2/code/{registrationId}'
@@ -24,11 +24,11 @@ spring:
             - openid
             - profile
         provider:
-          gateway:
-            authorizationUri: https://auth-server.renlm.cn/oauth2/authorize
-            tokenUri: https://auth-server.renlm.cn/oauth2/token
-            jwkSetUri: https://auth-server.renlm.cn/oauth2/jwks
-            userInfoUri: https://auth-server.renlm.cn/userinfo
+          local:
+            authorizationUri: http://127.0.0.1:8080/oauth2/authorize
+            tokenUri: http://127.0.0.1:8080/oauth2/token
+            jwkSetUri: http://127.0.0.1:8080/oauth2/jwks
+            userInfoUri: http://127.0.0.1:8080/userinfo
             userNameAttribute: sub
   cloud:
     gateway:
