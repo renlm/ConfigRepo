@@ -33,9 +33,9 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: npmmirror
+      - id: npmmirror2
         uri: https://registry.npmmirror.com
         predicates:
-        - Path=/npmmirror/**
+        - Path=/npmmirror2/**
         filters:
         - StripPrefix=1
