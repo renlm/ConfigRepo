@@ -25,15 +25,10 @@ spring:
             - profile
         provider:
           local:
-            authorizationUri: http://127.0.0.1:8080/oauth2/authorize
-            tokenUri: http://127.0.0.1:8080/oauth2/token
-            jwkSetUri: http://127.0.0.1:8080/oauth2/jwks
-            userInfoUri: http://127.0.0.1:8080/userinfo
-            userNameAttribute: sub
+            issuerUri: http://127.0.0.1:8080
       resourceserver:
         jwt:
           issuerUri: http://127.0.0.1:8080
-          jwkSetUri: http://127.0.0.1:8080/oauth2/jwks
   cloud:
     gateway:
       routes:
