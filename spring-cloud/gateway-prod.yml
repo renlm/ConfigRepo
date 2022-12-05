@@ -25,11 +25,10 @@ spring:
             - profile
         provider:
           gateway:
-            authorizationUri: https://auth-server.renlm.cn/oauth2/authorize
-            tokenUri: https://auth-server.renlm.cn/oauth2/token
-            jwkSetUri: https://auth-server.renlm.cn/oauth2/jwks
-            userInfoUri: https://auth-server.renlm.cn/userinfo
-            userNameAttribute: sub
+            issuerUri: https://auth-server.renlm.cn
+      resourceserver:
+        jwt:
+          issuerUri: https://auth-server.renlm.cn
   cloud:
     gateway:
       routes:
