@@ -30,10 +30,10 @@ spring:
             jwkSetUri: http://127.0.0.1:8080/oauth2/jwks
             userInfoUri: http://127.0.0.1:8080/userinfo
             userNameAttribute: sub
-    resourceserver:
-      jwt:
-        issuerUri: http://127.0.0.1:8080
-        jwkSetUri: http://127.0.0.1:8080/oauth2/jwks
+      resourceserver:
+        jwt:
+          issuerUri: http://127.0.0.1:8080
+          jwkSetUri: http://127.0.0.1:8080/oauth2/jwks
   cloud:
     gateway:
       routes:
