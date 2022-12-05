@@ -12,7 +12,13 @@ spring:
       namespace: gateway:session
   security:
     oauth2:
+      resourceserver:
+        jwt:
+          issuerUri: https://auth-server.renlm.cn
       client:
+        provider:
+          gateway:
+            issuerUri: https://auth-server.renlm.cn
         registration:
           gateway:
             provider: gateway
@@ -23,12 +29,6 @@ spring:
             scope:
             - openid
             - profile
-        provider:
-          gateway:
-            issuerUri: https://auth-server.renlm.cn
-      resourceserver:
-        jwt:
-          issuerUri: https://auth-server.renlm.cn
   cloud:
     gateway:
       routes:
