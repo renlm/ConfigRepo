@@ -4,6 +4,10 @@ server:
     session:
       cookie:
         name: GATEWAY
+security:
+  ignore:
+    whites:
+    - /baidu
 spring:
   cloud:
     gateway:
