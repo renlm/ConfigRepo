@@ -1,0 +1,17 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          otDev:
+            provider: otDev
+            clientId: otDev
+            clientSecret: secretOtDev
+            authorizationGrantType: authorization_code
+            redirectUri: '{baseUrl}/login/oauth2/code/{registrationId}'
+            scope:
+            - openid
+            - profile
+        provider:
+          otDev:
+            issuerUri: http://127.0.0.1:8080

@@ -1,0 +1,17 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          otProd:
+            provider: otProd
+            clientId: otProd
+            clientSecret: secretOtProd
+            authorizationGrantType: authorization_code
+            redirectUri: '{baseUrl}/login/oauth2/code/{registrationId}'
+            scope:
+            - openid
+            - profile
+        provider:
+          otProd:
+            issuerUri: https://auth-server.renlm.cn
