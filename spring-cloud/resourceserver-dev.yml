@@ -1,0 +1,6 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuerUri: http://127.0.0.1:8080

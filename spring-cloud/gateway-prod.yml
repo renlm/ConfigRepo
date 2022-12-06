@@ -4,31 +4,6 @@ server:
     session:
       cookie:
         name: GATEWAY
-spring:
-  redis:
-    clientName: gateway-prod
-  session:
-    redis:
-      namespace: gateway:session
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuerUri: https://auth-server.renlm.cn
-      client:
-        provider:
-          gateway:
-            issuerUri: https://auth-server.renlm.cn
-        registration:
-          gateway:
-            provider: gateway
-            clientId: gateway
-            clientSecret: secret2
-            authorizationGrantType: authorization_code
-            redirectUri: '{baseUrl}/login/oauth2/code/{registrationId}'
-            scope:
-            - openid
-            - profile
   cloud:
     gateway:
       routes:
