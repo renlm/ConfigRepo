@@ -9,11 +9,6 @@ spring:
     user:
       name: springCloud
       password: 123654
-  redis:
-    clientName: eureka-server-dev
-  session:
-    redis:
-      namespace: eurekaserver:session
 eureka:
   datacenter: default
   environment: dev

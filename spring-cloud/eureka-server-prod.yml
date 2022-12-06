@@ -9,11 +9,6 @@ spring:
     user:
       name: ${SECURITY_NAME}
       password: ${SECURITY_PASSWORD}
-  redis:
-    clientName: eureka-server-prod
-  session:
-    redis:
-      namespace: eurekaserver:session
 eureka:
   datacenter: cloud
   environment: product
