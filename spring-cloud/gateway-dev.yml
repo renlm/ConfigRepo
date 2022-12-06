@@ -5,30 +5,11 @@ server:
       cookie:
         name: GATEWAY
 spring:
-  redis:
-    clientName: gateway-dev
-  session:
-    redis:
-      namespace: gateway:session
   security:
     oauth2:
       resourceserver:
         jwt:
           issuerUri: http://127.0.0.1:8080
-      client:
-        provider:
-          local:
-            issuerUri: http://127.0.0.1:8080
-        registration:
-          local:
-            provider: local
-            clientId: local
-            clientSecret: secret1
-            authorizationGrantType: authorization_code
-            redirectUri: '{baseUrl}/login/oauth2/code/{registrationId}'
-            scope:
-            - openid
-            - profile
   cloud:
     gateway:
       routes:
