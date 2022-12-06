@@ -11,7 +11,9 @@ spring:
       - TokenRelay
       routes:
       - id: baidu
-        uri: http://127.0.0.1:7002
+        uri: no://op
+        predicates:
+        - Path=/baidu/**
         filters:
         - RedirectTo=302, https://www.baidu.com
       - id: npmmirror
