@@ -7,7 +7,7 @@ server:
 security:
   ignore:
     whites:
-    - /baidu2
+    - /baidu
 spring:
   cloud:
     gateway:
