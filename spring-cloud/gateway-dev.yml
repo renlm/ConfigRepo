@@ -10,6 +10,10 @@ spring:
       defaultFilters:
       - TokenRelay
       routes:
+      - id: baidu
+        uri: https://www.baidu.com
+        filters:
+        - RedirectTo=302, https://acme.org
       - id: npmmirror
         uri: https://registry.npmmirror.com
         predicates:
