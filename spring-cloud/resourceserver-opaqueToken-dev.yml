@@ -1,0 +1,8 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        opaqueToken:
+          clientId: ot
+          clientSecret: secretOt
+          introspectionUri: http://127.0.0.1:8080/oauth2/introspect

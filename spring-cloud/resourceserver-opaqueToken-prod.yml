@@ -1,0 +1,8 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        opaqueToken:
+          clientId: ot
+          clientSecret: secretOt
+          introspectionUri: https://auth-server.renlm.cn/oauth2/introspect
