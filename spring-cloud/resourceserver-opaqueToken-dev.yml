@@ -3,6 +3,6 @@ spring:
     oauth2:
       resourceserver:
         opaqueToken:
-          clientId: ot
-          clientSecret: secretOt
+          clientId: otDev
+          clientSecret: secretOtDev
           introspectionUri: http://127.0.0.1:8080/oauth2/introspect

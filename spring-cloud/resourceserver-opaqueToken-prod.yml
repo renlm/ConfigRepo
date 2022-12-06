@@ -3,6 +3,6 @@ spring:
     oauth2:
       resourceserver:
         opaqueToken:
-          clientId: ot
-          clientSecret: secretOt
+          clientId: otProd
+          clientSecret: secretOtProd
           introspectionUri: https://auth-server.renlm.cn/oauth2/introspect
