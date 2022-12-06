@@ -11,9 +11,9 @@ spring:
       - TokenRelay
       routes:
       - id: baidu
-        uri: https://www.baidu.com
+        uri: no://op
         filters:
-        - RedirectTo=302, https://acme.org
+        - RedirectTo=302, https://www.baidu.com
       - id: npmmirror
         uri: https://registry.npmmirror.com
         predicates:
