@@ -7,6 +7,8 @@ server:
 spring:
   cloud:
     gateway:
+      defaultFilters:
+      - TokenRelay
       routes:
       - id: npmmirror
         uri: https://registry.npmmirror.com
@@ -14,3 +16,8 @@ spring:
         - Path=/npmmirror/**
         filters:
         - StripPrefix=1
+        - name: RequestRateLimiter
+          args:
+            redisRateLimiter.replenishRate: 1
+            redisRateLimiter.burstCapacity: 2
+            redisRateLimiter.requestedTokens: 1
