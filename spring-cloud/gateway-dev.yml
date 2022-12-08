@@ -16,11 +16,12 @@ spring:
       globalcors:
         addToSimpleUrlHandlerMapping: true
         corsConfigurations:
-          '[/npmmirror/**]':
-            allowedOrigins: '*'
-            allowedHeaders: '*'
-            allowedMethods: '*'
-            allowCredentials: true
+          '[/**]':
+            allowedOrigins:
+            - http://127.0.0.1:3000
+            allowedMethods:
+            - GET
+            - POST
       routes:
       - id: baidu
         uri: no://op
