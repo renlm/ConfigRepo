@@ -7,12 +7,21 @@ server:
 security:
   ignore:
     whites:
-    - /baidu
+    - /npmmirror
 spring:
   cloud:
     gateway:
       defaultFilters:
       - TokenRelay
+      globalcors:
+        addToSimpleUrlHandlerMapping: true
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+            - http://127.0.0.1:3000
+            allowedMethods:
+            - GET
+            - POST
       routes:
       - id: baidu
         uri: no://op
