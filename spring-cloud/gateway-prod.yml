@@ -4,6 +4,10 @@ server:
     session:
       cookie:
         name: GATEWAY
+security:
+  ignore:
+    whites:
+    - /npmmirror
 spring:
   cloud:
     gateway:
