@@ -1,8 +1,14 @@
 spring:
   data:
     redis:
+      database: 7
       host: '{cipher}AQBmTIRb9tpsd/mbbSUbY2x+gpC9y8aoNduIWuVR8GM/HsHfY8i4lEyQSgSWzdNIGKI5IxGpiCypuNRS6mYKoJG6K/ArcbPRBrFdOm58mtGvBoUaVRcAzQ7CQFkPqsOKATRthCuCihrpGpwJy3nDV8tDR8Th7gqVmeOkp+C8iqaD0ep/aQGAnNqOCaxWaJcmeKS9wYLOoWMi6zTZ/L1yzuk9pzqs4Snjjna1Iin2o0a0WwMfPo3cUid8CVxaG/wCFCaLjpsgD7gkem3nxNYBFr8QSxVF1jQnfWeuhE27dOTJ3NycpwChEGOaw96Xk9s+nIJ7f4veO5qZnoOSMGWSzMMdPqcQ7gzVw/Y2ICXssxD63+67COx5o1Fw76UtFXGWj+s='
       port: '{cipher}AQCoBaJpH/XVKbA3TYiOgbq5SOUMD1XeZdWGAiK4uR6Hj5pu4nbvABPDJTHMiPsZnbFoTqB6l53VDONIi1q280hqXjU3r5DXdPb/Xs87ns3ZGqZsVefo7llQxosVCnE87LtcbkK3sFaBpsFh53u7fef6btvvluTmOWk4L+tWR3+arRxkMsWa6m9kpyoWQnREhg/IXNAoHp/Mh+6PyUboTQxN4MZI/Ar5cMT4MsoqFlQenPRZAtwbNDEcMUVrFYbFaQYLE1Do4Bou+LJAXZAYH9tgIhC65vhaFfP68lScXHYfV+aD8gvlJMAkSxfbYN1XOOzBAKjD7CBh2izZpNAsjYCLeQ1hDarzxlUTWFhvtfpw37MFtQz4vU1Mo7MTMskLsuU='
-      timeout: '{cipher}AQB/t2xRy9fQmUDWF1s6DEBXXkFbJAvCH4a9RsczOI7s8V2huZYVu24kW+04r5ri2QdhTFso4h3/CD7VnD403nlhcjy+b2Y1Wb4NX0c1WnvlPy/WaodBplEXLiGS9Xpy2jUUqrfTafcfijauYplbcxgrYRRL6sPRxtzKk4PY/FtHFye+2f/HPSH3ofLB2Pryb+7CVsYQmQwuFG1hsFGKlfeHAggKKNi2Glria0dHmQkGPi81/1LDMu/Hcy1WcF2Pw45WkixXuJQxy+aWfLmrck4ZTtYC5zP7t2dCacAZvWIP4uIe7sEkShLI+VTKjSPrsR3Yfp7vDOCw+zqarbVjXcbLVYh5SeZK8x9yptm01X8fqcILmyudfwx3z06d/r4Fl9Q='
       password: '{cipher}AQBGfz8qaSAm0ixBeR6XUjNOl9rkpsI8/RbaCiXE2i+kNeWhNhKeUq6xeOKmfnsy52Mn9Y/sAzD4AaDb1mCPZq4m4rpK9K4W4010VM0c4aXXigPLW8MzKK8DDag/IjQxePDCEmxqXJIZYs9sktTPIODZNJ//qYOhTlf7cHfo9BH8YU+I4RsdDoARJi0jByh3V0aT/ECuQPXIIU+d85Dp7lBypXfnTSCXto/MXwXWzZ4ma9w/hV9K/BUv+sjDUdMu+/2AgyrQfNqcevGvWLlo9SJeP8cGiYKvnMsxDDxvyhdm2D5N7E9CoQvs2ANUP6gi+bhQpnx+YhYbwVzQP5yJ23xAAhwkPM3aYo2d2hDPzwidM1J8Yi34dd/+fJC9fPsLuqPLcgaslS2f+gfkR3zu5bsBKaXihuIvKih5SNG4y326jw=='
-      database: '{cipher}AQCe1aJIp2Jx5Yi6zSelxmV/ko6SC5a2QkfwocLvsZFcvguQ0t/0UjpuIglHgpQjMxy+NEWT+8tOt3BSQi3ju/N0Sfb5E9A93lvekDHzaDBpbllOOkfW0mXnFUU9JhMnCuQczPVqhs0WFPrVqTVSN+bXkMPg50IZn9yj3NieSfgIt7LZr4y23lre40tkirM5g/HVGCB1PCSiaiPYfxO6UAYpGb0aamXenB42TN6tsR61G6nY0os1sLWxLL6xCmwNLCkAlzfAkmU/vfxMv5DxoDqykHqehe176/is6SPtGnm8ggYAeW0kG650MFVD9QMDwgQKSlqgcZ4+DuiyiLWa7s8afXhALkuiiSlnUCkXc275H1pHvbIbPgiaX/ddahum8q0='
+      timeout: 10s
+      lettuce:
+        pool:
+          maxActive: 256
+          maxWait: 2000ms
+          maxIdle: 10
+          minIdle: 5
