@@ -7,7 +7,7 @@ server:
 security:
   ignore:
     whites:
-    - /npmmirror
+    - /baidu
 spring:
   cloud:
     gateway:
