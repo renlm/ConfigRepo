@@ -1,14 +1,5 @@
 server:
   port: 7001
-  servlet:
-    session:
-      cookie:
-        name: EUREKA-SERVER
-spring:
-  security:
-    user:
-      name: ${SECURITY_NAME}
-      password: ${SECURITY_PASSWORD}
 eureka:
   datacenter: cloud
   environment: product

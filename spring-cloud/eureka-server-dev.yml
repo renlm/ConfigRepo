@@ -1,14 +1,5 @@
 server:
   port: 7001
-  servlet:
-    session:
-      cookie:
-        name: EUREKA-SERVER
-spring:
-  security:
-    user:
-      name: springCloud
-      password: 123654
 eureka:
   datacenter: default
   environment: dev
