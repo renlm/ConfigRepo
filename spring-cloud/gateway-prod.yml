@@ -36,3 +36,9 @@ spring:
         - Path=/npmmirror/**
         filters:
         - StripPrefix=1
+      - id: eureka-server
+        uri: lb://eureka-server:7001
+        predicates:
+        - Path=/eureka-server/**
+        filters:
+        - StripPrefix=1
