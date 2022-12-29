@@ -33,3 +33,5 @@ spring:
         - Path=/eureka/css/**
         - Path=/eureka/fonts/**
         - Path=/eureka/images/**
+        filters:
+        - StripPrefix=0
