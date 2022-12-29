@@ -1,6 +1,6 @@
 logging:
   level:
-    root: info
+    root: INFO
   file:
     name: /opt/log/${spring.application.name}.log
   logback:
