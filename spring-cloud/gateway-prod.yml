@@ -29,4 +29,4 @@ spring:
       - id: EurekaStatic
         uri: lb://eureka-server:7001
         predicates:
-        - Path=/eureka/js/**
+        - Path=/eureka/**
