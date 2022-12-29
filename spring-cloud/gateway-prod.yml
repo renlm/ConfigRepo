@@ -30,3 +30,9 @@ spring:
         uri: lb://eureka-server:7001
         predicates:
         - Path=/eureka/js/**,/eureka/css/**,/eureka/fonts/**,/eureka/images/**
+      - id: Demo
+        uri: lb://demo:8001
+        predicates:
+        - Path=/demo/**
+        filters:
+        - StripPrefix=1
