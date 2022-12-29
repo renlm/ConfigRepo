@@ -4,10 +4,6 @@ server:
     session:
       cookie:
         name: GATEWAY
-security:
-  ignore:
-    whites:
-    - /baidu
 spring:
   cloud:
     gateway:
@@ -19,26 +15,21 @@ spring:
         corsConfigurations:
           '[/**]':
             allowedOrigins:
-            - http://127.0.0.1:3000
+            - https://renlm.cn
             allowedMethods:
             - GET
             - POST
       routes:
-      - id: baidu
-        uri: no://op
-        predicates:
-        - Path=/baidu/**
-        filters:
-        - RedirectTo=302, https://www.baidu.com
-      - id: npmmirror
-        uri: https://registry.npmmirror.com
-        predicates:
-        - Path=/npmmirror/**
-        filters:
-        - StripPrefix=1
-      - id: eureka-server
+      - id: EurekaServer
         uri: lb://eureka-server:7001
         predicates:
-        - Path=/eureka-server/**
+        - Path=/eureka
         filters:
         - StripPrefix=1
+      - id: EurekaStatic
+        uri: lb://eureka-server:7001
+        predicates:
+        - Path=/eureka/js/**
+        - Path=/eureka/css/**
+        - Path=/eureka/fonts/**
+        - Path=/eureka/images/**
