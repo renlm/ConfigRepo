@@ -1,7 +1,7 @@
 eureka:
   instance:
     preferIpAddress: true
-    hostname: ${HOSTNAME:${spring.cloud.client.ipAddress}}
+    hostname: ${HOSTNAME:${spring.cloud.client.ip-address}}
     nonSecurePort: ${server.port}
     instanceId: ${eureka.instance.hostname}:${eureka.instance.nonSecurePort}
   client:
