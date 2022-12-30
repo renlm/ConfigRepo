@@ -30,6 +30,12 @@ spring:
         uri: lb://eureka-server
         predicates:
         - Path=/eureka/js/**,/eureka/css/**,/eureka/fonts/**,/eureka/images/**
+      - id: Config
+        uri: lb://config-server
+        predicates:
+        - Path=/config/monitor
+        filters:
+        - StripPrefix=1
       - id: Demo
         uri: lb://demo
         predicates:
