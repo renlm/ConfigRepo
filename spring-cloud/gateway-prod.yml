@@ -43,12 +43,6 @@ spring:
         uri: lb://eureka-server
         predicates:
         - Path=/eureka/js/**,/eureka/css/**,/eureka/fonts/**,/eureka/images/**
-        filters:
-        - name: RequestRateLimiter
-          args:
-            redis-rate-limiter.replenishRate: 10
-            redis-rate-limiter.burstCapacity: 20
-            redis-rate-limiter.requestedTokens: 1
       - id: Config
         uri: lb://config-server
         predicates:
