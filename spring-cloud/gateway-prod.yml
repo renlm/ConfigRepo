@@ -21,6 +21,9 @@ spring:
           '[/**]':
             allowedOrigins:
             - https://renlm.cn
+            - https://mygraph.renlm.cn
+            - https://auth-server.renlm.cn
+            - https://gateway.renlm.cn
             allowedMethods:
             - GET
             - POST
@@ -33,8 +36,8 @@ spring:
         - StripPrefix=1
         - name: RequestRateLimiter
           args:
-            redis-rate-limiter.replenishRate: 1
-            redis-rate-limiter.burstCapacity: 2
+            redis-rate-limiter.replenishRate: 3
+            redis-rate-limiter.burstCapacity: 5
             redis-rate-limiter.requestedTokens: 1
       - id: EurekaStatic
         uri: lb://eureka-server
