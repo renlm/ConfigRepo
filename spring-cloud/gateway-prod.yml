@@ -21,13 +21,13 @@ spring:
             - POST
       routes:
       - id: EurekaServer
-        uri: lb://eureka-server:7001
+        uri: lb://eureka-server
         predicates:
         - Path=/eureka
         filters:
         - StripPrefix=1
       - id: EurekaStatic
-        uri: lb://eureka-server:7001
+        uri: lb://eureka-server
         predicates:
         - Path=/eureka/js/**,/eureka/css/**,/eureka/fonts/**,/eureka/images/**
       - id: Demo
