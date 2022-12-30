@@ -4,6 +4,11 @@ server:
     session:
       cookie:
         name: GATEWAY
+security:
+  ignore:
+    whites:
+    - /config/monitor
+    - /demo/**
 spring:
   cloud:
     gateway:
