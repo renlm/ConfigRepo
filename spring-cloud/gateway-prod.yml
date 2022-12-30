@@ -1,5 +1,5 @@
 server:
-  port: 7002
+  port: 80
   reactive:
     session:
       cookie:
@@ -31,7 +31,7 @@ spring:
         predicates:
         - Path=/eureka/js/**,/eureka/css/**,/eureka/fonts/**,/eureka/images/**
       - id: Demo
-        uri: lb://demo:8001
+        uri: lb://demo
         predicates:
         - Path=/demo/**
         filters:
