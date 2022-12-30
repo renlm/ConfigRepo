@@ -1,6 +1,6 @@
 eureka:
   instance:
-    preferIpAddress: false
+    preferIpAddress: true
     hostname: ${EUREKA_INSTANCE_HOSTNAME}
     nonSecurePort: ${server.port}
     instanceId: ${eureka.instance.hostname}:${eureka.instance.nonSecurePort}
