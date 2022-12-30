@@ -43,8 +43,8 @@ spring:
         filters:
         - name: RequestRateLimiter
           args:
-            redis-rate-limiter.replenishRate: 5
-            redis-rate-limiter.burstCapacity: 10
+            redis-rate-limiter.replenishRate: 10
+            redis-rate-limiter.burstCapacity: 20
             redis-rate-limiter.requestedTokens: 1
       - id: Config
         uri: lb://config-server
