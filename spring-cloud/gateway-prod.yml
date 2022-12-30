@@ -33,8 +33,8 @@ spring:
         - StripPrefix=1
         - name: RequestRateLimiter
           args:
-            redis-rate-limiter.replenishRate: 10
-            redis-rate-limiter.burstCapacity: 20
+            redis-rate-limiter.replenishRate: 1
+            redis-rate-limiter.burstCapacity: 2
             redis-rate-limiter.requestedTokens: 1
       - id: EurekaStatic
         uri: lb://eureka-server
@@ -43,8 +43,8 @@ spring:
         filters:
         - name: RequestRateLimiter
           args:
-            redis-rate-limiter.replenishRate: 10
-            redis-rate-limiter.burstCapacity: 20
+            redis-rate-limiter.replenishRate: 6
+            redis-rate-limiter.burstCapacity: 10
             redis-rate-limiter.requestedTokens: 1
       - id: Config
         uri: lb://config-server
@@ -52,11 +52,6 @@ spring:
         - Path=/config/monitor
         filters:
         - StripPrefix=1
-        - name: RequestRateLimiter
-          args:
-            redis-rate-limiter.replenishRate: 10
-            redis-rate-limiter.burstCapacity: 20
-            redis-rate-limiter.requestedTokens: 1
       - id: Demo
         uri: lb://demo
         predicates:
