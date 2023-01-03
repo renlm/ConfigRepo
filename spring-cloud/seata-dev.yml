@@ -1,5 +1,8 @@
 seata:
   enabled: true
+  txServiceGroup: myTxGroup
   service:
-    grouplist:
-      default: http://localhost:8099
+    vgroupMapping:
+      myTxGroup: SEATA-SERVER
+  registry:
+    type: eureka
