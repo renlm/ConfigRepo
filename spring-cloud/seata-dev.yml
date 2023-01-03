@@ -1,3 +1,7 @@
-service:
-  vgroupMapping:
-    default_tx_group: SEATA-SERVER
+seata:
+  enabled: true
+  applicationId: ${spring.application.name}
+  txServiceGroup: myTxGroup
+  service:
+    vgroupMapping:
+      myTxGroup: SEATA-SERVER
