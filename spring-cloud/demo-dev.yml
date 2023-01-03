@@ -1,2 +1,28 @@
 server:
   port: 8001
+spring:
+  datasource:
+    dynamic:
+      primary: master
+      strict: true
+      datasource:
+        master:
+          url: ENC(/0ecf3cS2HEnTd5c7pv64Pt0LSGTddWMgoYRikEC5rmIDyZbsmwp9ENHi/gZSMagMq5misO1CcrrARDPfHL5bMUj6O95rVPcqjtUPqjEHuTM3i99UybSemLyNrJ0H9xaKXBqSFSQhSCuZpwphOdr1vTZZvb9deCvhkV32zRPtF1hg4A8vQ0vjQP2ZN0KzEsGaRWoeQ5c4fAag4QiaWhVTA==)
+          username: ENC(TH8gokJSLbQ6b+3miT2omUUP2ymJzM14ItGSYD9dZ2W4/pzFusZeCvwkuY1nFL4l)
+          password: ENC(DP2Al147pJyiFArv67h0Pm08fFWjX9Ktjyri2jXjBm4ZWYsnSwXBwOsdk7ndmNmKJu8QjXCg7oDhIqQy9HnAcw==)
+          driverClassName: com.mysql.cj.jdbc.Driver
+          init:
+            schema: classpath:db/mysql/schema.sql
+            data: classpath:db/mysql/data.sql
+            continueOnError: false
+            separator: ;
+        postgres:
+          url: ENC(SFL37VRadD5qqyp672TFdLlKCFIhBzl+ynX9ofYisE4lWSt4aQpMn509WWzso/z8IiI74WLRljJMj+oo2sPSC8oFkN79tLzdSmdGQAocZhQ=)
+          username: ENC(7mWEzmsVn12ddCFHjxi/IweTPym0oMwtcMKx6W/VKtevJy/wv9e+yNo5dt0sqTKy)
+          password: ENC(/l8lDy+1OF9mBZ8+Wc37e81v84fl6rXJGBhS8+J6x2/WIoZqt/Do9oFebdoddAGst7HZ0vuiP6WRrvNVTGfSAog3ZjqC2k+PHQjxEQ0REHQ=)
+          driverClassName: org.postgresql.Driver
+          init:
+            schema: classpath:db/postgres/schema.sql
+            data: classpath:db/postgres/data.sql
+            continueOnError: false
+            separator: ;

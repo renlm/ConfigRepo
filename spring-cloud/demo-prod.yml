@@ -1,2 +1,18 @@
 server:
   port: 80
+spring:
+  datasource:
+    dynamic:
+      primary: master
+      strict: true
+      datasource:
+        master:
+          url: jdbc:mysql://mysql:3306/mygraph?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&rewriteBatchedStatements=true
+          username: ENC(TH8gokJSLbQ6b+3miT2omUUP2ymJzM14ItGSYD9dZ2W4/pzFusZeCvwkuY1nFL4l)
+          password: ENC(DP2Al147pJyiFArv67h0Pm08fFWjX9Ktjyri2jXjBm4ZWYsnSwXBwOsdk7ndmNmKJu8QjXCg7oDhIqQy9HnAcw==)
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        postgres:
+          url: jdbc:postgresql://postgres:5432/renlm
+          username: ENC(cWNSjv36z1d4Mvb5oyX0rIAsSr1S0Stff2eKUdibLBWkNrTOz7+Yh/mpT/7dAUXM)
+          password: ENC(tTnYQr9uIMWDWE8MimAvS8n/pnKm4fMzfz8wLxWXIOs+BRG5nYqCZkv23N5qcZaym4ydBsdMxfCeSfYr4rQe5Ojzq5PiGnB/pCwvBCt9PLw=)
+          driver-class-name: org.postgresql.Driver
