@@ -3,11 +3,5 @@ seata:
   applicationId: ${spring.application.name}
   txServiceGroup: myTxGroup
   service:
-    vgroupMapping:
-      myTxGroup: SEATA-SERVER
-  registry:
-    type: eureka
-    eureka:
-      serviceUrl: ${EUREKA_SERVER:http://localhost:7001/eureka}
-      application: SEATA-SERVER
-      weight: 1
+    grouplist:
+      myTxGroup: http://localhost:8099
