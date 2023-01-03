@@ -1,9 +1,5 @@
 seata:
   enabled: true
-  applicationId: ${spring.application.name}
-  txServiceGroup: myTxGroup
   service:
-    vgroupMapping:
-      myTxGroup: SEATA-SERVER
     grouplist:
-      SEATA-SERVER: http://localhost:8099
+      default: http://localhost:8099
