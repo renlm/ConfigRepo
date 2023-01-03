@@ -3,5 +3,7 @@ seata:
   applicationId: ${spring.application.name}
   txServiceGroup: myTxGroup
   service:
+    vgroupMapping:
+      myTxGroup: SEATA-SERVER
     grouplist:
-      myTxGroup: http://localhost:8099
+      SEATA-SERVER: http://localhost:8099
