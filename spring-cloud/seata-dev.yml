@@ -4,5 +4,3 @@ seata:
   service:
     vgroupMapping:
       myTxGroup: SEATA-SERVER
-  registry:
-    type: eureka
