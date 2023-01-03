@@ -5,6 +5,8 @@ seata:
   service:
     vgroupMapping:
       myTxGroup: SEATA-SERVER
+  config:
+    type: file
   registry:
     type: eureka
     eureka:
