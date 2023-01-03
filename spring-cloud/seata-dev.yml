@@ -5,3 +5,9 @@ seata:
   service:
     vgroupMapping:
       myTxGroup: SEATA-SERVER
+  registry:
+    type: eureka
+    eureka:
+      serviceUrl: ${EUREKA_SERVER:http://localhost:7001/eureka}
+      application: SEATA-SERVER
+      weight: 1
