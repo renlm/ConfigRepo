@@ -7,9 +7,9 @@ spring:
       strict: true
       datasource:
         master:
-          url: ENC(/0ecf3cS2HEnTd5c7pv64Pt0LSGTddWMgoYRikEC5rmIDyZbsmwp9ENHi/gZSMagMq5misO1CcrrARDPfHL5bMUj6O95rVPcqjtUPqjEHuTM3i99UybSemLyNrJ0H9xaKXBqSFSQhSCuZpwphOdr1vTZZvb9deCvhkV32zRPtF1hg4A8vQ0vjQP2ZN0KzEsGaRWoeQ5c4fAag4QiaWhVTA==)
-          username: ENC(TH8gokJSLbQ6b+3miT2omUUP2ymJzM14ItGSYD9dZ2W4/pzFusZeCvwkuY1nFL4l)
-          password: ENC(DP2Al147pJyiFArv67h0Pm08fFWjX9Ktjyri2jXjBm4ZWYsnSwXBwOsdk7ndmNmKJu8QjXCg7oDhIqQy9HnAcw==)
+          url: '{cipher}AQCekwU5LX+KmjPQbbqYefUS5EClwsEUfOAevyMf+UsYJWYxoQD5Exxxk9KRg3Mgl+mDiYf7lh+4H3QRnXS/l2oOfVIXOTK8AIjPpFrWtQL9ZVaZh52dr1VzE/sQsVPx4AkVtaZ0PLu0UbjFLBpsfb9PD9veMDxuZWYOxaUEoRXUDSaRXrEKeom08PtEtTsOItG8cSeCxrWITotlBpoJBMGWXZq69ct4VtbhBEnl7UaTAZUDtE5N14lpv/zj2yaN4mxgO24RDsUwHJCAowxCSyjNS6CFud2jvvf/4SKngcfLknmFsbu6fP9hbr6ecy2ySfND82ueiu13OA+wB0nVPtcH+sXlK3UgfA3stsIEEb7ah2lvXx1uCVLQEn7B89+UUQcrLGb+76Tc937dhHip/HkmPS2eX0LQKvVevCDNKA+QT/ESszL7TImo6gR5lHHno8ouZU9NJMLRvnUsz8xZBgn2wYWj/tI6y7ZHLzMmhqNFZjfhOKyp+AtfOYyfw1DXWA6yYlbiZqrR2cy4khsl1X2M'
+          username: '{cipher}AQAMZI9yRfRT0aa6e34ySKyMXOvqwGEoXWPPtu31vsw/KiwZBVJDA2FO28iOrQWlnm1+sNSX2bhDaFUB/w21i45PUUke4MI0Rlj4ye4SkHVWAlJcT3W7wswNb4CTYz3+8RMLYtgfv8TY6v1Bm2/47/8Cm1xsogmkOqSPc2kSA4m+uA4eD3cKDOQ9MjvcZZCETsu4d7xKrKlbPqxZUjNANsKF6zmHVlKKOs4r+WpzH5GGO50EJiMVKbM2zLBGwHy4Sg/WIz/tG0jIkCKaMLK+w725RsGRUiojSdyONrv41vGqo3ATRAHNB3CYjgwPKUNQgoCxizTT6ClTTRTnX+ErHyZHMtDzTs2IUs+8eLv98j3vSL0Ywrh5K3K1i9rOHJx1UCk='
+          password: '{cipher}AQBqnWP9CjDmKKK/jqo/7aIZ5/Ycch6KAQDoklNrHYfpdwm4j2VuOWHQNM0rkcRUiXhr3V5yOYbl2VfvxHV5qICKvotoX6EGEnIqQAXL/YfwHRldwpg271SiF9aPJoe/IBCclg+nTW3DjAeJn1RbyN0u8JYCcIeCLRQlcPvUMMn3kNhjXBDLQAGrWf51qX4Hlkaa3zvURKuzhWU2ssOEQ89vuiQq6AD4ocOJadcsi6E7QjCJhiHQ0/ZkuCEdsEtyscPxQVD3XqXYT1K1VXPfYHMNSivrS6SKTNTd5KnLa+eOq1npgQXfe/2nS9w4ixpAWm7H5inCYEsZ0fevkqhNGW+cDmQfu1Qo3jwBuYYXbVlMvaO5Z2e51aebxKbVLvqfkfOwALEO739yrLxOIUtzpfzo'
           driverClassName: com.mysql.cj.jdbc.Driver
           init:
             schema: classpath:db/mysql/schema.sql
@@ -17,9 +17,9 @@ spring:
             continueOnError: false
             separator: ;
         postgres:
-          url: ENC(SFL37VRadD5qqyp672TFdLlKCFIhBzl+ynX9ofYisE4lWSt4aQpMn509WWzso/z8IiI74WLRljJMj+oo2sPSC8oFkN79tLzdSmdGQAocZhQ=)
-          username: ENC(7mWEzmsVn12ddCFHjxi/IweTPym0oMwtcMKx6W/VKtevJy/wv9e+yNo5dt0sqTKy)
-          password: ENC(/l8lDy+1OF9mBZ8+Wc37e81v84fl6rXJGBhS8+J6x2/WIoZqt/Do9oFebdoddAGst7HZ0vuiP6WRrvNVTGfSAog3ZjqC2k+PHQjxEQ0REHQ=)
+          url: '{cipher}AQAWkPBCrmJVr5Pq9+wLvrvL8G2jZ7+reWd/rYo6BjqFf9z4jzGVqgBO6PIV0bkg1WZZf0FRI12GSuSl0M1jWt5I5RvyN/A0QWznBvU8Sy3OQHahztJbAyCfcuDcQpf24/f07U0BhZOK3bGYdzrnImoyoFgLNK7iIqAScIG1VZwrhqovnM1bZpi7l3oVoALQY/KWtmLsZIYJaoOXIUOpFQq9CYkXrGCOqq/A1aBrQ47A9WOGWTHlvxb84CuXb/AhybJkUF6QCC0nUUC/xmBPQvT2NrmHloExeAWavOUsJUiYPkYhZOqBjQpRt4iDzmg/I5jrUwHQbX3uJUvj+41bDC+WrCfBEFkYgudVdyuy98hgwEDr2Zva/2rWhj6hBIx8SyaOY1SZcFKpYj9Ki0HBr73+yFMzwTGHttHD/2v0k3snCQ=='
+          username: '{cipher}AQBr4VeGCuT3saVc3sLK9qgqUQFlOxHZnMlYnBJjtudRBrHU6ytCmpJd61bkbEPKj7tk2tR5U/AbGqvZDH2gZ42wVZ8rGkpV6F0lRlAey01c6gPWGU2NjMIIso6XUi4couaxBOiHfRTOmrwFvoFIDgIvs1Kx5MoYCqTUVeTiWiFG3gMa0yND3hzXE2Z2ol4c6RFbHNHiw4m1Wqx1oQAsDyXDkreo+gCKmHHnTzQkv2f8YZTNQcXH9e6WNO5hCbW95eQ25jw8jmtHImGp4X5Tq07afWp4rA/tvgWWSnsUD8qinjGs2q4joVY1Rz+3+kfNImvWkoFO0PHgzB/MYc7StxpyMx+RirbSSrGijMZvRmJdlxePoKptvGcgT7pPn2sw2C0='
+          password: '{cipher}AQAys7s/9U33YPjF6GNBgsvOibdDmx+e2wxSKkY/JU5sLSB7mxIWODbht7cWDWm+Akm8O36WzHjZrjOYfSzjtv+EAcMK6YC2E77PeN747AJLCkI1sc6Zb6n7LupEPybqPQSAOBEwDKh5xlVLffpxfwbdrpCTKvB3AINMqOxdUyRb6GU6xanW+1452SadqSGxk9AW8YJsvqtep0GYRvIxHYatwDIL/orVMj8gQvj2LjvvbGRwQ32dIjIHO4t/5hJTP8+zZAEbLvq5MlzvKztIBMpCMWN2yrXzeEEOuLbHquVsdb4m8zDbg5/i2BsPa8UOFReqhQqZya8jloGZlqMI9AxqxxXpK1dQqmYvzBKHOq0jH/sV/WtVMxMAgr8GE1+i76UvmLbtr8Zly9mr+svsBwMrJuqPe5s4Muzg/0lSWWjeDQ=='
           driverClassName: org.postgresql.Driver
           init:
             schema: classpath:db/postgres/schema.sql

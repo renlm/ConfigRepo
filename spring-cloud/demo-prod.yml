@@ -8,11 +8,11 @@ spring:
       datasource:
         master:
           url: jdbc:mysql://mysql:3306/mygraph?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&rewriteBatchedStatements=true
-          username: ENC(TH8gokJSLbQ6b+3miT2omUUP2ymJzM14ItGSYD9dZ2W4/pzFusZeCvwkuY1nFL4l)
-          password: ENC(DP2Al147pJyiFArv67h0Pm08fFWjX9Ktjyri2jXjBm4ZWYsnSwXBwOsdk7ndmNmKJu8QjXCg7oDhIqQy9HnAcw==)
+          username: '{cipher}AQCnB3M4ADjuyxmElwK7p7QrFBoO2xqVbQh2w4FiIFNcBO6OqaasfPN92xUvK2309gCvMAuhOXxtvfeEAZiggvZWuN4ySGNMc/ldJBMfLwFXoD+v44Z6btXP5LuKVoxrTbXXlveEcQALPWEZugawRJ1iaw5BOIAQ91Lvx6qaBr2nN4MiSk70+ZlOOXliUc+8RSK7aEWSNIVqcXPC9NzQWDtbgCPnMfIMb2BqnYFa1QBA9t2tkbg8g3KOZ0gKv83ZW53p3UvG/E2T/jMaHxrGUdNK3MNv3MPoMG7uicM1UesEtH73Az+500q40BYD3sf4e1iEvYMq1mzpvqtuYHFlfkrJPJSP8hEZ628MpnQoj4bRJFzVlG6kq2o7f4LtB1J513w='
+          password: '{cipher}AQBZVWQoS2S95NN4j1wdzSbkQvXqzcOeS67DSFP5NaOJPZlwkOQdlLSqpOfZU6vDTu06bNdyIFnxFL221O50c/10gX2cyDhMaaBk5S8VO6lcszJrJN6uET5tUuHVill5KDDMc1ovrCRHLsoRnlWhnbuS4AyMd9UU2jKMt5bDwqTLC6AiA3OT8U8r4MFo7f6KXCc//3J5VAob7xTljF1KL33cPBFz4tdWkjPEliXKGjnwhgesdcngCknaJdBN4o2Hy8Z62uKoaAQ9m/YNoXdodudnb5Xdr4HGmJALRec66fVs0alYK0GO9mPchuSYoCZQp3sfe6pDBl8myZ86opJK3OLVQIRxqVvQiB58x9zUaTpKpNskdCWXag8NiXA5OrCfkCNkQJ9Plv/dyy9XRcfKIfbk'
           driver-class-name: com.mysql.cj.jdbc.Driver
         postgres:
           url: jdbc:postgresql://postgres:5432/renlm
-          username: ENC(cWNSjv36z1d4Mvb5oyX0rIAsSr1S0Stff2eKUdibLBWkNrTOz7+Yh/mpT/7dAUXM)
-          password: ENC(tTnYQr9uIMWDWE8MimAvS8n/pnKm4fMzfz8wLxWXIOs+BRG5nYqCZkv23N5qcZaym4ydBsdMxfCeSfYr4rQe5Ojzq5PiGnB/pCwvBCt9PLw=)
+          username: '{cipher}AQASwaRGc+wRJ+JVdYBTlsO51dfg9uQ8EWcW2P0Mx+VMDvtsyc5C6s8RlD7HS/Kp4tujPfgdvjto7B0EytAjhk4LStm84RZpycTWBfaaPfAiGKPCXdyA9UVfPf/cdponARdTUhZgp317vcl5uZZmxxnGZyC47T3cgme5XwO0430JSV03vbADZo0mDdngc5+HwUcdNI9JlewBxk5045Bj7oOy1OJ7tts/bd36OK9g/L8N5BcX7PJbPeXzCzcaWze8IxdSxRf6vhizyMRNUq8+R2NQVDFcBL2odN3bjMckhIVMxc53kwBCDBePJTcgEyETD2wjwXi1R5QihK+FItAr/xfXFd2Zyc+ThOORx002ZgUSxodfV2KEAXj/O85eIBThKio='
+          password: '{cipher}AQAVWVpbdk3r4Jp0x6B8GDzpFBM4PHtA1l4FTExP8Z9gPd9Tp7oKg84DkPoUVUhUTGQZxqOIbCQAZxFkTSgsgrUCNGJa7drXa9PqfKIagbacOlSKZnjkapHeiI24FkjJcaUbGrNPcEiYlK/nUmnwZuLExcR6QE/wzZPtPjFoytuLMTO9p0j+A5CWrfFHrqFoC+mvNTScKCk7TwOcXqx1uYu0jxRzahg1JAZZNVjqb1hEGq4fW0KlzQaREOMFCqPvvbVjo2IlZlEOI1rdPyTENW69U00wKwVHfJO+WfsrFDnOoHfKiQMcneUa7xRFN1zQROT8hg9OksTDICQtmXuaB6T6pK/zwL07eJfLVcY+u9xSm2S9TUgcrOcOpoPPiRxXqNow9/c44sT4dZjBuIq04LEKaKB9xfzeUJxcP6CS4JXyzQ=='
           driver-class-name: org.postgresql.Driver
