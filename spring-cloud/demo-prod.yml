@@ -3,6 +3,8 @@ server:
 spring:
   datasource:
     dynamic:
+      seata: true
+      seataMode: AT
       primary: master
       strict: true
       datasource:
