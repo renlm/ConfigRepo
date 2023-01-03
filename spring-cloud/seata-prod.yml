@@ -1,3 +1,8 @@
-service:
-  vgroupMapping:
-    default_tx_group: SEATA-SERVER
+seata:
+  enabled: true
+  txServiceGroup: myTxGroup
+  service:
+    vgroupMapping:
+      myTxGroup: SEATA-SERVER
+    grouplist:
+      SEATA-SERVER: 10.43.76.14:8091
