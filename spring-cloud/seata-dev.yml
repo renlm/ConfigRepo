@@ -5,4 +5,4 @@ seata:
     vgroupMapping:
       myTxGroup: SEATA-SERVER
     grouplist:
-      SEATA-SERVER: http://127.0.0.1:8099
+      SEATA-SERVER: 127.0.0.1:8099
