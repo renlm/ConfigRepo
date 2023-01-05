@@ -14,4 +14,4 @@ spring:
             - profile
         provider:
           otProd:
-            issuerUri: https://auth-server.renlm.cn
+            issuerUri: https://mygraph.renlm.cn

@@ -5,4 +5,4 @@ spring:
         opaqueToken:
           clientId: otProd
           clientSecret: secretOtProd
-          introspectionUri: https://auth-server.renlm.cn/oauth2/introspect
+          introspectionUri: https://mygraph.renlm.cn/oauth2/introspect

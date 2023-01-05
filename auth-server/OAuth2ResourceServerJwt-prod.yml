@@ -3,4 +3,4 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuerUri: https://auth-server.renlm.cn
+          issuerUri: https://mygraph.renlm.cn
