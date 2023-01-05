@@ -5,4 +5,4 @@ spring:
         opaqueToken:
           clientId: otDev
           clientSecret: secretOtDev
-          introspectionUri: http://127.0.0.1:8080/oauth2/introspect
+          introspectionUri: http://localhost/mygraph/oauth2/introspect
