@@ -23,7 +23,6 @@ spring:
             allowedOrigins:
             - https://renlm.cn
             - https://mygraph.renlm.cn
-            - https://auth-server.renlm.cn
             - https://gateway.renlm.cn
             allowedMethods:
             - GET
