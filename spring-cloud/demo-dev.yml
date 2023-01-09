@@ -9,9 +9,9 @@ spring:
       strict: true
       datasource:
         master:
-          url: '{cipher}AQCekwU5LX+KmjPQbbqYefUS5EClwsEUfOAevyMf+UsYJWYxoQD5Exxxk9KRg3Mgl+mDiYf7lh+4H3QRnXS/l2oOfVIXOTK8AIjPpFrWtQL9ZVaZh52dr1VzE/sQsVPx4AkVtaZ0PLu0UbjFLBpsfb9PD9veMDxuZWYOxaUEoRXUDSaRXrEKeom08PtEtTsOItG8cSeCxrWITotlBpoJBMGWXZq69ct4VtbhBEnl7UaTAZUDtE5N14lpv/zj2yaN4mxgO24RDsUwHJCAowxCSyjNS6CFud2jvvf/4SKngcfLknmFsbu6fP9hbr6ecy2ySfND82ueiu13OA+wB0nVPtcH+sXlK3UgfA3stsIEEb7ah2lvXx1uCVLQEn7B89+UUQcrLGb+76Tc937dhHip/HkmPS2eX0LQKvVevCDNKA+QT/ESszL7TImo6gR5lHHno8ouZU9NJMLRvnUsz8xZBgn2wYWj/tI6y7ZHLzMmhqNFZjfhOKyp+AtfOYyfw1DXWA6yYlbiZqrR2cy4khsl1X2M'
-          username: '{cipher}AQAMZI9yRfRT0aa6e34ySKyMXOvqwGEoXWPPtu31vsw/KiwZBVJDA2FO28iOrQWlnm1+sNSX2bhDaFUB/w21i45PUUke4MI0Rlj4ye4SkHVWAlJcT3W7wswNb4CTYz3+8RMLYtgfv8TY6v1Bm2/47/8Cm1xsogmkOqSPc2kSA4m+uA4eD3cKDOQ9MjvcZZCETsu4d7xKrKlbPqxZUjNANsKF6zmHVlKKOs4r+WpzH5GGO50EJiMVKbM2zLBGwHy4Sg/WIz/tG0jIkCKaMLK+w725RsGRUiojSdyONrv41vGqo3ATRAHNB3CYjgwPKUNQgoCxizTT6ClTTRTnX+ErHyZHMtDzTs2IUs+8eLv98j3vSL0Ywrh5K3K1i9rOHJx1UCk='
-          password: '{cipher}AQBqnWP9CjDmKKK/jqo/7aIZ5/Ycch6KAQDoklNrHYfpdwm4j2VuOWHQNM0rkcRUiXhr3V5yOYbl2VfvxHV5qICKvotoX6EGEnIqQAXL/YfwHRldwpg271SiF9aPJoe/IBCclg+nTW3DjAeJn1RbyN0u8JYCcIeCLRQlcPvUMMn3kNhjXBDLQAGrWf51qX4Hlkaa3zvURKuzhWU2ssOEQ89vuiQq6AD4ocOJadcsi6E7QjCJhiHQ0/ZkuCEdsEtyscPxQVD3XqXYT1K1VXPfYHMNSivrS6SKTNTd5KnLa+eOq1npgQXfe/2nS9w4ixpAWm7H5inCYEsZ0fevkqhNGW+cDmQfu1Qo3jwBuYYXbVlMvaO5Z2e51aebxKbVLvqfkfOwALEO739yrLxOIUtzpfzo'
+          url: jdbc:mysql://renlm.cn:30306/demo?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&rewriteBatchedStatements=true
+          username: '{cipher}AQCMSr/ri9g0QUDsFqz2yiGMI9p9amILLK99GZr4hg4Ai+upy0YNmbn2V+frx9jOnR7xiOAxSBgPPtLwrLbCUMVmhVBDFd7rHUdOSE5Hyx3UEx7Ib76+9ok2HB4fJb8I2m7PjXetIzBOqH/4EtJKxCjcZzOvB9fkFXNnQ+h6rK7HmEJykvhsm6pCOm13oJ9jg0t+hCDcz11jATzUA4jW3w1ijUy8RelNh3Kt2ZgOt5+fmrJrFvBXK+BzZJmxzbwLhfkM4VBqiqS1mqMt2O34LHdAGYLl8LV/5DIk/ldfZBwxnLoGg7bWHOC7yxfHJ/SZJBHwnaHeC+F0/kKyOGfpZjf01AOCeoKBkaTn/NN3cahNYiZb0r1E7ZmHtNOA5Av9O5g='
+          password: '{cipher}AQCJLXAmWvujVJ5PooUtA8XZ+26Os6ayAnXba9Sr2KFfIbYa+beU58tZekuGbgI3C+JYBqH1eqtuQhCL3Y2kVszVKRpZlh0Acj2AMBGDZgnnsFZtF3hYk8Ic72qqMrI0YO8TrfFRJmtkOC8+wNdh1/YX+nyZVm2u+lYBKUahVGJ7XEys59peGj6rR4ddZswcvnMskNcbsgnPHtGuq+YTgkW6NnlYo1b8HCFaqMURf2aadTZCstHBYTc2w40//0dvoSDz/SbsTpQvvP5tmQWPz/xmGNoiIGWE6tFQ200VN9tnaErP95TpDwzoY8l6Iz6d6Zt2QJ/Q8fiMs4Bd8JbEwoCUxTzewdXC+70ZKz5Fv1yFXRc6QkEsgeVn+S/YJyG9q633Ci/5v1KVekloFlGZwS7j'
           driverClassName: com.mysql.cj.jdbc.Driver
           init:
             schema: classpath:db/mysql/schema.sql
@@ -19,9 +19,9 @@ spring:
             continueOnError: false
             separator: ;
         postgres:
-          url: '{cipher}AQAWkPBCrmJVr5Pq9+wLvrvL8G2jZ7+reWd/rYo6BjqFf9z4jzGVqgBO6PIV0bkg1WZZf0FRI12GSuSl0M1jWt5I5RvyN/A0QWznBvU8Sy3OQHahztJbAyCfcuDcQpf24/f07U0BhZOK3bGYdzrnImoyoFgLNK7iIqAScIG1VZwrhqovnM1bZpi7l3oVoALQY/KWtmLsZIYJaoOXIUOpFQq9CYkXrGCOqq/A1aBrQ47A9WOGWTHlvxb84CuXb/AhybJkUF6QCC0nUUC/xmBPQvT2NrmHloExeAWavOUsJUiYPkYhZOqBjQpRt4iDzmg/I5jrUwHQbX3uJUvj+41bDC+WrCfBEFkYgudVdyuy98hgwEDr2Zva/2rWhj6hBIx8SyaOY1SZcFKpYj9Ki0HBr73+yFMzwTGHttHD/2v0k3snCQ=='
-          username: '{cipher}AQBr4VeGCuT3saVc3sLK9qgqUQFlOxHZnMlYnBJjtudRBrHU6ytCmpJd61bkbEPKj7tk2tR5U/AbGqvZDH2gZ42wVZ8rGkpV6F0lRlAey01c6gPWGU2NjMIIso6XUi4couaxBOiHfRTOmrwFvoFIDgIvs1Kx5MoYCqTUVeTiWiFG3gMa0yND3hzXE2Z2ol4c6RFbHNHiw4m1Wqx1oQAsDyXDkreo+gCKmHHnTzQkv2f8YZTNQcXH9e6WNO5hCbW95eQ25jw8jmtHImGp4X5Tq07afWp4rA/tvgWWSnsUD8qinjGs2q4joVY1Rz+3+kfNImvWkoFO0PHgzB/MYc7StxpyMx+RirbSSrGijMZvRmJdlxePoKptvGcgT7pPn2sw2C0='
-          password: '{cipher}AQAys7s/9U33YPjF6GNBgsvOibdDmx+e2wxSKkY/JU5sLSB7mxIWODbht7cWDWm+Akm8O36WzHjZrjOYfSzjtv+EAcMK6YC2E77PeN747AJLCkI1sc6Zb6n7LupEPybqPQSAOBEwDKh5xlVLffpxfwbdrpCTKvB3AINMqOxdUyRb6GU6xanW+1452SadqSGxk9AW8YJsvqtep0GYRvIxHYatwDIL/orVMj8gQvj2LjvvbGRwQ32dIjIHO4t/5hJTP8+zZAEbLvq5MlzvKztIBMpCMWN2yrXzeEEOuLbHquVsdb4m8zDbg5/i2BsPa8UOFReqhQqZya8jloGZlqMI9AxqxxXpK1dQqmYvzBKHOq0jH/sV/WtVMxMAgr8GE1+i76UvmLbtr8Zly9mr+svsBwMrJuqPe5s4Muzg/0lSWWjeDQ=='
+          url: jdbc:postgresql://renlm.cn:30432/demo
+          username: '{cipher}AQBuDpc5BMrI7dUOMz1nuXc0/YfevtVp+zmzXjyqYadvdRx/IAXIq61lTI4TTvqEdL3Rm6DHyc+UGjRcT/+i3Yuuy3BFDe0afajg4zzaWf/bCngDIM64ldtgzPssdtV3/koex0M8wdvrUpBQ2tHdT4msIBZpG95XFQCRKDdFjkwJYh4EwC2Q8ahHgF97oS3bnMH57oWhu+6M2ZyBp/hHqBkHB32bdKYg8J5lYelF5m88owEnG/NrB87Pc3McMcRrsHEMfoYkobysdQ7UdfzHL0AYbAqlEkOhaDSABxuiWeFf3u2M26IiSMEYvUCOTCH+s9u+TxQ+u1GK1CQKS7NzVZG01+65dniWvE8LwLNWYCGhWMf7OhVij1uoK0BC/SDFdug='
+          password: '{cipher}AQAcRVRjJEMrsQRcOcSup/SvQJlQ4AUhIUCJfiu6WgyWttl306QXgOfF7SmOV5EAFN0a97BBMMNH6A40reeCZeK0LwTvZj4zrfMtjNOFMhNrNyEfqTWOOdubFTW3gOJjXJVXSWXIHZ28l/aWPNIOVtKGk6GbXNkgDvRdzY7pO450OT5/UkEuk0bQeM+YlBJ+TsEdUoLVEjynMETBeLrlGYaAgdLq7AYMv/FkWSROsyOBIvAIftildxbXCWPrbxGfZsD4F632DuTHCUkNP2Yx6PbBWmRQ0VYkyun99ySE41hYwWa1tsX2Ufm5GxPX6cX7FPFceof0t1Yun00XQGufZ9o6pnuLXs2T5gpx45OrDCAZOKzeAqIV+zEtmVeqEjxTyY7b+Q561a6eb69feLy90BAC'
           driverClassName: org.postgresql.Driver
           init:
             schema: classpath:db/postgres/schema.sql
